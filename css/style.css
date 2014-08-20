@@ -1,0 +1,3146 @@
+/**
+ * style.css
+ *
+ * @author Valentin Siebenborn - For Sale Digital
+ *
+ * $LastChangedRevision$
+ * $LastChangedBy$
+ * $LastChangedDate$
+ */
+
+/*** NORMALIZE ***/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*** PRIMARY STYLES ***/
+
+body {
+	font-family:'UniversLTW01-57Condense 723821',Arial;
+	color:#000;
+}
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+@font-face{ 
+	font-family:"UniversLTW01-57Condense 723821";
+	src:url("../fonts/aefefc4e-9cb8-4e8e-8599-dda705456734.eot?iefix") format("eot");}
+@font-face{
+	font-family:"UniversLTW01-57Condense 723821";
+	src:url("../fonts/aefefc4e-9cb8-4e8e-8599-dda705456734.eot?iefix");
+	src:url("../fonts/1eaf27c0-f4de-4273-9f4c-1b3236ad2f3c.woff") format("woff"),url("/fonts/9b913baf-b1f0-47d2-8c76-42f59650058f.ttf") format("truetype"),url("/fonts/0abcce12-2274-4ee7-b6d5-0066b5f5f670.svg#0abcce12-2274-4ee7-b6d5-0066b5f5f670") format("svg");
+}
+@font-face{
+	font-family:"UniversLTW01-67BoldCn";
+	src:url("../fonts/076b8d7a-91b5-4c89-86a1-546b980072c7.eot?iefix") format("eot");}
+@font-face{
+	font-family:"UniversLTW01-67BoldCn";
+	src:url("../fonts/076b8d7a-91b5-4c89-86a1-546b980072c7.eot?iefix");
+	src:url("../fonts/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff") format("woff"),url("/fonts/091058d4-36b2-43f6-80d3-16c88e098061.ttf") format("truetype"),url("/fonts/827d22bc-e38b-4ccf-8a21-1f9aaa76e402.svg#827d22bc-e38b-4ccf-8a21-1f9aaa76e402") format("svg");
+}
+
+p {
+	font-family:'UniversLTW01-57Condense 723821',Arial;
+	font-size: 15px;
+}
+
+p {
+	line-height:1.5;
+}
+
+.row {
+	width:970px;
+}
+
+a {
+	color:#000;
+	font-size:15px;
+}
+
+a:hover {
+	color:#A5141E;
+}
+
+#main-content a.seo-link {
+	border:none !important;
+	cursor:text;
+}
+
+/* Profisorischer lösung umd die Sub-Navigation bei einzelene jobs und einzelene artikeln anzuzeigen*/
+.jobs nav .row div ul li:last-child ul, .presse nav .row div ul li:nth-child(7) ul{
+    display: block;
+}
+
+#main-content a.seo-link:hover,
+#main-content a.seo-link:active,
+#main-content a.seo-link:focus,
+#main-content a.seo-link:visited {
+	color:#000;
+}
+
+h1, h2, h3, h4, h6 {
+	font-family: "UniversLTW01-67BoldCn";	
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 210%;	
+}
+
+h1 small,
+h2 small {
+	color:#000;
+	font-size: 50%;
+}
+
+#main-content h1,
+h2,
+.listing * h2 {
+	font-size: 170% !important;
+	margin-bottom:18px;
+}
+
+.jobs h2  > a {
+	border: none !important;
+}
+
+.jobs h2  > a:hover {
+	color: #000 !important;
+}
+
+h3 {
+	font-size: 140%;
+}
+
+h4 {
+	font-size: 16px;
+	margin-top:20px;
+	margin-bottom:7px;
+}
+
+h6 {
+	font-size: 16px;	
+}
+
+ul, ol, ul li ul {
+	list-style:none outside none;
+	line-height:1.5em;
+}
+
+.nobr {
+	white-space: nowrap;
+	font-size:15px !important;
+}
+
+.break-word {
+	word-wrap: break-word;
+}
+
+.leistungen h3 {
+	margin:59px 0 7px !important;
+}
+
+.clear {
+	display: block;
+	overflow: hidden;
+	clear: both !important;
+	float: none !important;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*** Icons ***/
+
+.icon {
+	background:url("../img/icons.gif") no-repeat scroll 0 0 transparent;
+	height:19px;
+}
+
+.icon.address {
+	background-position: 78px 4px;
+}
+
+.icon.gallery {
+	background-position: 70px -15px;
+}
+
+.icon.location {
+	background-position: 80px -34px;
+}
+
+.icon.enlarge, .icon.route {
+   border:none !important;
+   padding:0 0 0 20px;
+}
+
+.icon.enlarge span, .icon.route span {
+   border-bottom:1px solid #A5141E;
+   font-size:13px;
+}
+
+.icon.enlarge {
+	background-position: 0 -55px;
+}
+
+.icon.route {
+	background-position: 0 -71px;
+	float:right;
+}
+
+.route {
+	float:right;
+	height:19px;
+}
+
+/**Forms**/
+
+form {
+	margin:35px 0 0;	
+}
+
+.bewerbung form,
+.jobs form {
+	margin:0;	
+}
+
+label {
+   color:#000;
+   margin: 0 0 5px 0;
+}
+
+input, textarea {
+	background-color: #F4F4F4;
+	border-radius:0 !important;
+	margin-bottom:20px;
+}
+
+textarea {
+   resize: none;
+   height:220px;
+   font-family:Arial,Sans-Serif;
+  }
+
+label span:nth-child(2) {
+   color:#000000;
+}
+
+#callback {
+	margin:30px 0 0 0;
+}
+
+.button.radius.form {
+	border:none;
+	background:url("../img/arrow-kontakt.png") no-repeat scroll 92% 50% #444444;
+	box-shadow:none;
+	border-radius:4px !important;
+	padding:12px 36px 11px 22px;
+	font-family:"UniversLTW01-57Condense 723821";
+	font-size:16px;	
+	text-transform: uppercase;
+}
+
+.bewerbung .button.radius.form {
+	background:url("../img/arrow-kontakt.png") no-repeat scroll 92% 15px #444444;
+}
+
+input[type="file"] {
+	margin:0 0 12px;
+	padding:6px;
+}
+
+input[type="text"] {
+	width:70%;
+}
+
+.row .five.columns input[type="text"] {
+	width:100%;
+}
+
+.error textarea {
+	background-color:rgba(198, 15, 19, 0.1);
+	border-color:#C60F13;
+}
+
+.joblink-inactive {
+	display: none;
+}
+.job{
+    margin-bottom:2.5em;
+}
+.job-list li{
+    margin-bottom:12px;
+}
+.job-list li a{
+	font-family:"UniversLTW01-67BoldCn";
+}
+.second{
+    padding-top: 1em;
+}
+
+/** Banner **/
+/*** Banner Slider ***/
+#banner,
+.agentur.e-commerce #banner,
+.agentur.m-commerce #banner,
+.agentur.multichannel #banner,
+.agentur.travel #banner  {
+	background: url(../img/bg.jpg) repeat-x 0 0 #fff;
+	position:relative;
+}
+
+.leistungen #banner  {
+	background: url(../img/bg-drak.jpg) repeat-x 0 0 #fff;
+}
+
+#banner .columns {
+	padding:0;
+}
+
+div.orbit {
+	margin-bottom:0px;
+}
+
+div.orbit-wrapper {
+	margin:14px 0 35px 0;	
+}
+
+div.orbit div.orbit-slide {
+	display:none;	
+}
+
+/*** Banner without Slider ***/
+
+.banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-ecommerce.png") no-repeat scroll left top transparent;
+	height:350px;
+}
+
+.banner-block div {
+	margin: 75px 0 0 15px;
+}
+
+.banner-block h1,
+.banner-block h2 {
+	font-size: 210% !important;
+	margin-bottom: 12px !important;
+	padding: 0 0 7px 0;
+}
+
+@media only screen and (min-width:768px) {
+	.leistungen .banner-block h2 {
+		width: 256px;
+		height: 0px;
+		margin-bottom: 25px !important;
+		padding: 77px 0 0 0;
+		display: block;
+		overflow: hidden;
+		background: url("../img/banner/leistungen-h1.png") left top no-repeat;
+	}
+
+	.leistungen .banner-block p {
+		color: #FFFFFF;
+	}
+}
+
+.lt-ie9 .leistungen .banner-block h2 {
+	width: 256px;
+	height: 0px;
+	margin-bottom: 28px;
+	padding: 77px 0 0 0;
+	display: block;
+	overflow: hidden;
+	background: url("../img/banner/leistungen-h1.png") left top no-repeat;
+}
+
+.lt-ie9 .leistungen .banner-block p {
+	color: #FFFFFF;
+}
+
+.banner-block p {
+	color:#000;
+}
+
+/*** Banner Agency ***/
+
+.agentur #banner {
+	 background: url("../img/banner/for-sale-digital-internetagentur-hamburg.jpg") repeat-x scroll center top transparent;
+}
+
+.agentur.so-sind-wir .banner-block {
+	background:none !important;
+}
+
+/** Banner Customers **/
+
+.arbeiten .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen.png") no-repeat scroll left top transparent;
+}
+.arbeiten.berge-meer .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-berge-und-mehr.png") no-repeat scroll left top transparent;
+}
+.arbeiten.blume2000 .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-blume-2000.png") no-repeat scroll left top transparent;
+}
+.arbeiten.lensbest .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-lensbest.png") no-repeat scroll left top transparent;
+}
+.arbeiten.liebherr .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-liebherr.png") no-repeat scroll left top transparent;
+}
+.arbeiten.ltur .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-ltur.png") no-repeat scroll left top transparent;
+}
+.arbeiten.max-bahr .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-max-bahr.png") no-repeat scroll left top transparent;
+}
+.arbeiten.mediamarkt .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-media-markt.png") no-repeat scroll left top transparent;
+}
+.arbeiten.monoplan .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-monoplan.png") no-repeat scroll left top transparent;
+}
+.arbeiten.loewen-hotel-montafon .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-loewen-hotel-montafon.png") no-repeat scroll left top transparent;
+}
+.arbeiten.eloma .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-eloma.png") no-repeat scroll left top transparent;
+}
+.arbeiten.dpv .banner-block {
+	background: none;
+}
+
+.arbeiten.dpv #banner .pm {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-pm.png") no-repeat scroll left top transparent;
+}
+.arbeiten.dpv #banner .eltern {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-eltern.png") no-repeat scroll left top transparent;
+}
+.arbeiten.dpv #banner .ng {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-ng.png") no-repeat scroll left top transparent;
+}
+
+.arbeiten.dpv #banner .ga {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-gala-men.png") no-repeat scroll left top transparent;
+}
+
+.arbeiten.die-besten-3 .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-referenzen-die-besten-3.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Attainment **/
+
+.agentur.e-commerce .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-agentur-e-commerce.png") no-repeat scroll left top transparent;
+}
+.agentur.m-commerce .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-agentur-m-commerce.png") no-repeat scroll left top transparent;
+}
+.agentur.multichannel .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-agentur-multichannel.png") no-repeat scroll left top transparent;
+}
+.agentur.travel .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-agentur-travel.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Attainment **/
+
+.leistungen .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-leistungen.png") no-repeat scroll left top transparent;
+}
+.leistungen.launch-relaunch .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-leistungen-launch-relaunch.png") no-repeat scroll left top transparent;
+}
+.leistungen.facelift-optimierung .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-leistungen-facelift-optimierung.png") no-repeat scroll left top transparent;
+}
+.leistungen.responsive-webdesign .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-leistungen-responsive-webdesign.png") no-repeat scroll left top transparent;
+}
+.leistungen.technik-umsetzung .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-leistungen-technik-umsetzung.png") no-repeat scroll left top transparent;
+}
+.leistungen.betrieb-betreuung .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-leistungen-betrieb-betreuung.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Attainment **/
+.presse.pressemeldungen .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-presse.png") no-repeat scroll left top transparent;
+}
+.presse.downloads .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-presse.png") no-repeat scroll left top transparent;
+}
+
+/** Logos Customers **/
+
+.arbeiten .banner-block.customers h1,
+.arbeiten .banner-block.customers h2 {
+	margin-top:3px;
+}
+
+.arbeiten .banner-block.customers div {
+	margin:0 0 0 15px;
+}
+
+.arbeiten .banner-block.customers div div  {
+	background:url("../img/banner/logos-customers.png") no-repeat scroll 0 0 transparent;
+	height:0;
+	text-indent:-9999px;
+	padding-top:66px;
+	margin:0;
+}
+
+.arbeiten.blume2000 .banner-block.customers div div  {
+	background-position: 5px -66px;
+}
+.arbeiten.lensbest .banner-block.customers div div  {
+	background-position: 1px -132px;
+}
+.arbeiten.liebherr .banner-block.customers div div  {
+	background-position: 1px -196px;
+}
+.arbeiten.ltur .banner-block.customers div div  {
+	background-position: 1px -262px;
+}
+.arbeiten.max-bahr .banner-block.customers div div  {
+	background-position: 1px -328px;
+}
+.arbeiten.mediamarkt .banner-block.customers div div  {
+	background-position: 1px -394px;
+}
+.arbeiten.monoplan .banner-block.customers div div  {
+	background-position: 1px -460px;
+}
+.arbeiten.dpv .banner-block.customers div div  {
+	background-position: 1px -528px;
+}
+.arbeiten.die-besten-3 .banner-block.customers div div  {
+	background-position: 1px -588px;
+}
+.arbeiten.loewen-hotel-montafon .banner-block.customers div div  {
+	background-position: 1px -660px;
+}
+.arbeiten.eloma .banner-block.customers div div  {
+	background-position: 1px -726px;
+}
+
+/** Banner Rotation **/
+
+#banner .orbit-wrapper  {
+	height: 350px !important;
+	max-width: 970px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0px;
+}
+
+#banner .orbit-slide  {
+	cursor: default;
+}
+
+#banner .orbit-wrapper .timer {
+	display: none;
+}
+
+/** Banner Mehr For Sale Digital **/
+
+.mehrforsale .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-mehr-for-sale.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Teams **/
+
+.teams .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-mitarbeiter.png") no-repeat scroll left top transparent;
+}
+.teams.strategie-beratung .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-strategie-beratung.png") no-repeat scroll left top transparent;
+}
+.teams.konzeption-text .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll left top transparent;
+}
+.teams.gestaltung .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll left top transparent;
+}
+.teams.entwicklung-produktion .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-produktion-entwicklung.png") no-repeat scroll left top transparent;
+}
+.teams.projektmanagement .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-projektmanagement.png") no-repeat scroll left top transparent;
+}
+.teams.qualitaetsmanagement .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-teams-qualitaetsmanagement.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Contact **/
+
+.kontakt .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-kontakt.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Impressum **/
+
+.impressum .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-impressum.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Jobs **/
+
+.jobs .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-stellenangebote-freie-jobs.png") no-repeat scroll left top transparent;
+}
+
+/** Banner Presse **/
+
+.presse .banner-block {
+	background:url("../img/banner/for-sale-digital-internetagentur-hamburg-presse.png") no-repeat scroll left top transparent;
+}
+
+/** Banner 404 **/
+
+.error .banner-block {
+	background:url("../img/banner/banner-404.png") no-repeat scroll left top transparent;
+}
+
+@media only screen and (min-width:768px) and (max-width:850px) {
+	.press-img.message-three.full {
+		background-size:100% !important;
+	}
+
+	nav ul li ul li a {
+		padding: 0 15px 0 2px !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#banner {
+		background-size: auto 260px !important;
+	}
+
+	.banner-block,
+	#banner .orbit-wrapper {
+		height:260px !important;
+	}
+		
+	.banner-block div,
+	.rotate { 
+		margin: 270px 0 0 0 !important;
+	} 
+	
+	.arbeiten .banner-block {
+		background-size: auto 260px !important;
+	}
+	
+	.banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-ecommerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur #banner {
+		background: url("../img/banner/800/for-sale-digital-internetagentur-hamburg.jpg") repeat-x scroll center top transparent;	
+	}
+	.agentur.e-commerce .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-agentur-e-commerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.m-commerce .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-agentur-m-commerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.multichannel .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-agentur-multichannel.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.travel .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-agentur-travel.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-leistungen.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.launch-relaunch .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-leistungen-launch-relaunch.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.facelift-optimierung .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-leistungen-facelift-optimierung.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.responsive-webdesign .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-leistungen-responsive-webdesign.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.technik-umsetzung .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-leistungen-technik-umsetzung.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.betrieb-betreuung .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-leistungen-betrieb-betreuung.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.berge-meer .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-berge-und-mehr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.blume2000 .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-blume-2000.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.lensbest .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-lensbest.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.liebherr .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-liebherr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.ltur .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-ltur.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv .banner-block {
+		background: none !important;
+	}
+	.arbeiten.dpv #banner .pm {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-pm.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .eltern {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-eltern.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .ng {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-ng.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .ga {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-gala-men.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.die-besten-3 .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-die-besten-3.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.max-bahr .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-max-bahr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.mediamarkt .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-media-markt.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.monoplan .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-monoplan.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.loewen-hotel-montafon .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-loewen-hotel-montafon.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.eloma .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-referenzen-eloma.png") no-repeat scroll center top transparent !important;
+	}
+	.mehrforsale .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-mehr-for-sale.png") no-repeat scroll center top transparent !important;
+	}
+	.presse .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-presse.png") no-repeat scroll center top transparent !important;
+	}
+	.teams .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-mitarbeiter.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.strategie-beratung .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-strategie-beratung.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.konzeption-text .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.gestaltung .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.entwicklung-produktion .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-produktion-entwicklung.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.projektmanagement .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-projektmanagement.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.qualitaetsmanagement .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-teams-qualitaetsmanagement.png") no-repeat scroll center top transparent !important;
+	}
+	.kontakt .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-kontakt.png") no-repeat scroll center top transparent !important;
+	}
+	.impressum .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-impressum.png") no-repeat scroll center top transparent !important;
+	}
+	.jobs .banner-block {
+		background:url("../img/banner/800/for-sale-digital-internetagentur-hamburg-stellenangebote-freie-jobs.png") no-repeat scroll center top transparent !important;
+	}
+	.error .banner-block {
+		background:url("../img/banner/800/banner-404.png") no-repeat scroll center top transparent !important;
+	}
+
+	.presse .report .facebook {
+		float:left !important;
+		margin-top:0 !important;
+	}
+
+	#socialshareprivacy {
+		display:none;
+	}
+
+	.jobs .listing {
+		padding-right:15px !important;	
+    }
+
+    .jobs .job-contact {
+        display: none;
+    }
+	
+}
+
+@media only screen and (max-width: 480px) {
+	#banner {
+		background-size: auto 177px !important;
+	}
+
+	.banner-block,
+	#banner .orbit-wrapper {
+		height:177px !important;
+	}
+	.banner-block div { 
+		margin: 185px 0 0 0 !important;
+	}
+	
+	.arbeiten .banner-block {
+		background-size: auto 177px !important;
+	}
+	
+   .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-ecommerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur #banner {
+		background: url("../img/banner/480/for-sale-digital-internetagentur-hamburg.jpg") repeat-x scroll center top transparent;	
+	}
+	.agentur.e-commerce .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-agentur-e-commerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.m-commerce .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-agentur-m-commerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.multichannel .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-agentur-multichannel.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.travel .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-agentur-travel.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-leistungen.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.launch-relaunch .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-leistungen-launch-relaunch.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.facelift-optimierung .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-leistungen-facelift-optimierung.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.responsive-webdesign .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-leistungen-responsive-webdesign.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.technik-umsetzung .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-leistungen-technik-umsetzung.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.betrieb-betreuung .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-leistungen-betrieb-betreuung.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.berge-meer .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-berge-und-mehr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.blume2000 .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-blume-2000.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.lensbest .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-lensbest.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.liebherr .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-liebherr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv .banner-block {
+		background: none !important;
+	}
+	.arbeiten.dpv #banner .pm {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-pm.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .eltern {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-eltern.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .ng {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-ng.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .ga {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-gala-men.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.die-besten-3 .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-die-besten-3.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.ltur .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-ltur.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.max-bahr .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-max-bahr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.mediamarkt .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-media-markt.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.monoplan .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-monoplan.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.loewen-hotel-montafon .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-loewen-hotel-montafon.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.eloma .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-referenzen-eloma.png") no-repeat scroll center top transparent !important;
+	}
+	.mehrforsale .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-mehr-for-sale.png") no-repeat scroll center top transparent !important;
+	}
+	.presse .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-presse.png") no-repeat scroll center top transparent !important;
+	}
+	.teams .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-mitarbeiter.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.strategie-beratung .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-strategie-beratung.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.konzeption-text .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.gestaltung .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.entwicklung-produktion .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-produktion-entwicklung.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.projektmanagement .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-projektmanagement.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.qualitaetsmanagement .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-teams-qualitaetsmanagement.png") no-repeat scroll center top transparent !important;
+	}
+	.kontakt .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-kontakt.png") no-repeat scroll center top transparent !important;
+	}
+	.impressum .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-impressum.png") no-repeat scroll center top transparent !important;
+	}
+	.jobs .banner-block {
+		background:url("../img/banner/480/for-sale-digital-internetagentur-hamburg-stellenangebote-freie-jobs.png") no-repeat scroll center top transparent !important;
+	}
+	.error .banner-block {
+		background:url("../img/banner/480/banner-404.png") no-repeat scroll center top transparent !important;
+	}
+	
+	#megadrop ul li a, #megadrop-foot-navi ul li a {
+		font-size: 110% !important;
+	}
+
+   #megadrop ul li a.active, #megadrop-foot-navi ul li a.active {
+		padding: 0 0 0 15px !important;
+		background-size:10px !important;
+		background-position: 0 5px !important;
+	}
+   
+	.mehrforsale .toggle-nav.button {
+		font-size:14px;
+		padding:11px 10px 11px;
+   }
+}
+
+@media only screen and (max-width: 320px) { 
+   #banner {
+		background-size: auto 145px !important;
+	}
+	
+	.banner-block,
+	#banner .orbit-wrapper {
+		height:145px !important;
+	}
+	.banner-block div { 
+		margin: 150px 0 0 0 !important;
+	} 
+	
+	.arbeiten .banner-block {
+		background-size: auto 145px !important;
+	}
+	
+	.banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-ecommerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur #banner {
+		background: url("../img/banner/320/for-sale-digital-internetagentur-hamburg.jpg") repeat-x scroll center top transparent;	
+	}
+	.agentur.e-commerce .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-agentur-e-commerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.m-commerce .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-agentur-m-commerce.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.multichannel .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-agentur-multichannel.png") no-repeat scroll center top transparent !important;
+	}
+	.agentur.travel .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-agentur-travel.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-leistungen.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.launch-relaunch .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-leistungen-launch-relaunch.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.facelift-optimierung .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-leistungen-facelift-optimierung.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.responsive-webdesign .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-leistungen-responsive-webdesign.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.technik-umsetzung .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-leistungen-technik-umsetzung.png") no-repeat scroll center top transparent !important;
+	}
+	.leistungen.betrieb-betreuung .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-leistungen-betrieb-betreuung.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.berge-meer .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-berge-und-mehr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.blume2000 .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-blume-2000.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.lensbest .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-lensbest.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.liebherr .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-liebherr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv .banner-block {
+		background: none !important;
+	}
+	.arbeiten.dpv #banner .pm {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-pm.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .eltern {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-eltern.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .ng {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-ng.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.dpv #banner .ga {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-gala-men.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.die-besten-3 .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-die-besten-3.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.ltur .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-ltur.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.max-bahr .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-max-bahr.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.mediamarkt .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-media-markt.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.monoplan .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-monoplan.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.loewen-hotel-montafon .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-loewen-hotel-montafon.png") no-repeat scroll center top transparent !important;
+	}
+	.arbeiten.eloma .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-referenzen-eloma.png") no-repeat scroll center top transparent !important;
+	}
+	.mehrforsale .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-mehr-for-sale.png") no-repeat scroll center top transparent !important;
+	}
+	.presse .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-presse.png") no-repeat scroll center top transparent !important;
+	}
+	.teams .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-mitarbeiter.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.strategie-beratung .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-strategie-beratung.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.konzeption-text .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.gestaltung .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-konzeption-grafik.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.entwicklung-produktion .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-produktion-entwicklung.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.projektmanagement .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-projektmanagement.png") no-repeat scroll center top transparent !important;
+	}
+	.teams.qualitaetsmanagement .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-teams-qualitaetsmanagement.png") no-repeat scroll center top transparent !important;
+	}
+	.kontakt .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-kontakt.png") no-repeat scroll center top transparent !important;
+	}
+	.impressum .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-impressum.png") no-repeat scroll center top transparent !important;
+	}
+	.jobs .banner-block {
+		background:url("../img/banner/320/for-sale-digital-internetagentur-hamburg-stellenangebote-freie-jobs.png") no-repeat scroll center top transparent !important;
+	}
+	.error .banner-block {
+		background:url("../img/banner/320/banner-404.png") no-repeat scroll center top transparent !important;
+	}
+	.mehrforsale .toggle-nav.button {
+		padding:11px 32px 11px 11px !important;
+   }
+	
+}
+
+@media only screen and (max-width: 1024px) {
+	header a {
+		background: url("../img/logo-mobile.png") no-repeat scroll center center / 170px 81px #FFFFFF !important;
+	}
+	
+	.mehrforsale .logo.for-sale {
+		background: url("../img/logo-for-sale-retina.png") no-repeat scroll center center / 150px 85px #FFFFFF !important;
+		width:150px !important;
+		height:85px;
+	}
+	
+	.mehrforsale .logo.for-sale-mobile {
+		background: url("../img/logo-for-sale-mobile-retina.png") no-repeat scroll center center / 187px 85px #FFFFFF !important;
+		width:187px !important;
+		height:85px;
+	}
+	.foot .button {
+		background:url("../img/arrow-mobile-bar-foot-retina.png") no-repeat scroll 10% 12px / 19px 16px #dddddd !important;
+	}
+	 
+	#contact-form p.hint, 
+	#job-form p.hint {
+		font-size: 12px;
+	}
+	
+	.press-img.contact {
+		background-position: left top !important;
+	}
+
+	.abb-img.contact,
+	.wesierski-img.contact,
+	.trieloff-img.contact,
+	.meyer-img.contact,
+	.wilck-img.contact,
+	.timmann-kaiser-img.contact,
+	.guenzel-kaiser-img.contact,
+	.kaiser-img.contact,
+	 {
+		background-position: right top !important;
+	}
+	figcaption .print.eps {
+		display:none!important;
+	}
+	
+	.press-img.message-two {
+		background-position: right top !important;
+	}
+
+	.press-img.message-three {
+		background-position: center top !important;
+	}
+
+	.press-img.message-four {
+		background-position: left top !important;
+	}
+	
+	.press-img.message-five {
+		background-position: left top !important;
+	}
+	
+	label[for=callback-1] {
+		margin-top: 0px !important;
+	}
+
+	#main-content #contact-form .seven.columns {
+		margin-bottom:0 !important;
+	}
+
+	.joblink-active {
+		display:none !important;
+	}
+
+	.joblink-inactive {
+		display:block !important;
+	}
+
+	nav a {
+		padding: 0 10px 0 2px !important;
+		font-size:116% !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.banner-block h1,
+	.banner-block h2 {
+		margin:14px 0 10px 0 !important;
+	 }
+	
+	.arbeiten .rotate h1,
+	.arbeiten .rotate h2 {
+		margin-bottom:10px;
+	}
+
+	.rotate { 
+		margin: 10px 0 0 0 !important;
+	} 
+	
+	#main-content h1,
+	#main-content h2 {
+		margin-top:0px !important;
+	}
+	
+	#main-content .seven.columns {
+		margin-bottom:20px !important;
+	}
+	
+	.row .mobile-two:last-child,
+	.row .mobile-three:last-child,
+	.row .mobile-four:last-child { 
+		padding: 0 0 0 15px !important;
+		float:left;
+	}
+
+	.row .mobile-three p,
+	.row .mobile-four p { 
+		border-bottom:1px solid #cccccc;
+		padding-bottom:20px !important;
+	}
+	
+	.agentur .row .mobile-four p { 
+		border-bottom:none;
+	}
+	
+	.agentur .row .mobile-four p.footnote { 
+		border-bottom:1px solid #cccccc;
+	}
+	
+	.agentur h3 {
+		margin: 0px 0 7px !important;
+	}
+	
+	.presse .row .mobile-four p.footnote { 
+		border-bottom:1px solid #cccccc;
+	}
+
+	.banner-block {
+		background-position: right top !important;
+	}
+
+	.arbeiten .banner-block.customers div div {
+		display:none;
+	}
+
+	.arbeiten .customers {
+		padding-top:0 !important;
+	}
+
+	.arbeiten .customers .columns {
+		padding:0 15px !important;
+	}
+
+	.arbeiten .customers .columns p {
+		padding:0 0 20px !important;
+	}
+
+	.arbeiten #main-content h3 {
+		margin: 0px 0 7px !important;
+	}
+
+	.arbeiten .banner-block.customers div div {
+		display:none;
+	}
+
+	.second.jobs {
+		padding-top:0!important;
+	}
+
+	#banner .columns {
+		padding-right: 15px!important;
+	}
+
+	.button.radius.form {
+		border:none;
+		background-image:none!important;
+	}
+
+	#main-content .h-contact {
+		margin:20px 0 7px!important;
+	}
+
+	#callback {
+		margin:0 5px 0 0!important;
+	}
+
+	input[type="text"] {
+		width:100% !important;
+	}
+
+	.presse figure {
+		width:100% !important; 
+		margin:2px 20px 10px 0;
+	}
+
+	.presse h3 {
+		margin: 10px 0 !important;
+	}
+
+	form {
+		margin:20px 0 0 0 !important;
+	}
+
+	.five.columns.press,
+	.eight.columns.press {
+		padding-left:15px !important;
+	}
+
+	.presse #main-content .seven.columns {
+		margin-bottom: 0 !important;
+	}
+
+	.presse #main-content .four.columns {
+		margin-bottom: 0 !important;
+	}
+
+	.presse #main-content .three.columns {
+	margin-top:20px !important;
+	}
+	
+	.press-img.message-one {
+		background:url(../img/presse/800/carina-kabuse.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-two {
+		background:url(../img/presse/800/kevin-trieloff.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-three {
+		background:url(../img/presse/800/tobias-kaiser.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-four {
+		background:url(../img/presse/800/bernd-abb.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-five {
+		background:url(../img/presse/800/klaus-martin-meyer.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.logo {
+		background:url(../img/presse/800/logo.png) center center no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.contact {
+		background:url(../img/presse/800/kerstin-auer.jpg) top left no-repeat !important;
+		background-size:100%!important;
+		padding-top:57%!important;
+	}
+	.guenzel-kaiser-img.contact {
+		background:url(../img/leistungen/800/stefan-guenzel-tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.meyer-img.contact {
+		background:url(../img/leistungen/800/klaus-martin-meyer.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.wesierski-img.contact {
+		background:url(../img/leistungen/800/daniel-damian-wesierski.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.abb-img.contact {
+		background:url(../img/leistungen/800/bernd-abb.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.wilck-img.contact {
+		background:url(../img/leistungen/800/lars-wilck.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.kaiser-img.contact {
+		background:url(../img/leistungen/800/tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.timmann-kaiser-img.contact {
+		background:url(../img/leistungen/800/levke-timmann-tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.trieloff-img.contact {
+		background:url(../img/leistungen/800/kevin-trieloff.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.agency-one {
+		background:url(../img/presse/800/fsd-eingangsbereich.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.agency-two {
+		background:url(../img/presse/800/fsd-thinktank.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-three {
+		background:url(../img/presse/800/fsd-pylone.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-four {
+		background:url(../img/presse/800/fsd-sofa.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-five {
+		background:url(../img/presse/800/fsd-tuerschild.jpg) top left no-repeat !important;
+		background-size:100%!important;
+   }
+   figcaption .print {
+		display:none!important;
+	}
+	.panel.radius form {
+	 margin-top:0!important;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.arbeiten #main-content .row .mobile-two {
+		width: 100% !important;
+	}
+	#copy {
+		margin-bottom:10px !important;
+	}
+	.button.radius.form {
+		margin-top:20px !important;
+	}
+	.press-img.message-two {
+		background:url(/img/presse/480/kevin-trieloff.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-three {
+		background:url(/img/presse/480/tobias-kaiser.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-four {
+		background:url(/img/presse/480/bernd-abb.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-five {
+		background:url(/img/presse/480/klaus-martin-meyer.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.logo {
+		background:url(/img/presse/480/logo.png) center center no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.contact {
+		background:url(/img/presse/480/kerstin-auer.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.guenzel-kaiser-img.contact {
+		background:url(/img/leistungen/480/stefan-guenzel-tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.meyer-img.contact {
+		background:url(/img/leistungen/480/klaus-martin-meyer.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.wesierski-img.contact {
+		background:url(/img/leistungen/480/daniel-damian-wesierski.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.abb-img.contact {
+		background:url(/img/leistungen/480/bernd-abb.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.wilck-img.contact {
+		background:url(/img/leistungen/480/lars-wilck.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.kaiser-img.contact {
+		background:url(/img/leistungen/480/tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.timmann-kaiser-img.contact {
+		background:url(/img/leistungen/480/levke-timmann-tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.trieloff-img.contact {
+		background:url(/img/leistungen/480/kevin-trieloff.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.agency-one {
+		background:url(/img/presse/480/fsd-eingangsbereich.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.agency-two {
+		background:url(/img/presse/480/fsd-thinktank.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-three {
+		background:url(/img/presse/480/fsd-pylone.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-four {
+		background:url(/img/presse/480/fsd-sofa.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-five {
+		background:url(/img/presse/480/fsd-tuerschild.jpg) top left no-repeat !important;
+		background-size:100%!important;
+   }
+}
+
+@media only screen and (max-width: 320px) {
+
+	h1 small,
+	h2 small {
+	  font-size:45%;
+	}
+	.row.credits .mobile-two {
+		width:100% !important;
+	}
+	.press-icon {
+		margin-bottom:20px;
+	}
+	.presse.downloads .row .mobile-two {
+		width:100% !important;
+	}
+	.press-img.message-two {
+		background:url(/img/presse/320/kevin-trieloff.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-three {
+		background:url(/img/presse/320/tobias-kaiser.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-four {
+		background:url(/img/presse/320/bernd-abb.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.message-five {
+		background:url(/img/presse/320/klaus-martin-meyer.jpg) no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.logo {
+		background:url(/img/presse/320/logo.png) center center no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.contact {
+		background:url(/img/presse/320/kerstin-auer.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.guenzel-kaiser-img.contact {
+		background:url(/img/leistungen/320/stefan-guenzel-tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.meyer-img.contact {
+		background:url(/img/leistungen/320/klaus-martin-meyer.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.wesierski-img.contact {
+		background:url(/img/leistungen/320/daniel-damian-wesierski.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.abb-img.contact {
+		background:url(/img/leistungen/320/bernd-abb.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.wilck-img.contact {
+		background:url(/img/leistungen/320/lars-wilck.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.kaiser-img.contact {
+		background:url(/img/leistungen/320/tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.timmann-kaiser-img.contact {
+		background:url(/img/leistungen/320/levke-timmann-tobias-kaiser.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.trieloff-img.contact {
+		background:url(/img/leistungen/320/kevin-trieloff.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.agency-one {
+		background:url(/img/presse/320/fsd-eingangsbereich.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+	.press-img.agency-two {
+		background:url(/img/presse/320/fsd-thinktank.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-three {
+		background:url(/img/presse/320/fsd-pylone.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-four {
+		background:url(/img/presse/320/fsd-sofa.jpg) top left no-repeat !important;
+		background-size:100%!important;
+	}
+   .press-img.agency-five {
+		background:url(/img/presse/320/fsd-tuerschild.jpg) top left no-repeat !important;
+		background-size:100%!important;
+   }
+}
+
+/**Presse Images **/
+
+.press-img.message-one {
+	background:url(/img/presse/320/carina-kabuse.jpg) top left no-repeat;
+	padding-top: 57%;
+}
+.press-img.message-one.full {
+	background:url(/img/presse/320/carina-kabuse.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.message-two {
+	background:url(/img/presse/kevin-trieloff.jpg) top left no-repeat;
+	padding-top: 57%;
+}
+.press-img.message-two.full {
+	background:url(/img/presse/320/kevin-trieloff.jpg) top left no-repeat;
+	padding-top: 68%;
+}
+.press-img.message-three {
+	background:url(/img/presse/tobias-kaiser.jpg) top left no-repeat;
+	padding-top: 57% ;
+}
+.press-img.message-three.full {
+	background:url(/img/presse/320/tobias-kaiser.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.message-four {
+	background:url(/img/presse/bernd-abb.jpg) top left no-repeat;
+	padding-top: 57%;
+}
+.press-img.message-four.full {
+	background:url(/img/presse/320/bernd-abb.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.message-five {
+	background:url(/img/presse/klaus-martin-meyer.jpg) top left no-repeat;
+	padding-top: 57%;
+}
+.press-img.message-five.full {
+	background:url(/img/presse/320/klaus-martin-meyer.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.logo {
+	background:url(/img/presse/logo.png) center center no-repeat;
+	padding-top: 68%;
+	margin-bottom:4px;
+}
+.press-img.contact {
+	background:url(/img/presse/320/kerstin-auer.jpg) top left no-repeat;
+	background-size:100% auto;
+	padding-top: 70%;
+	margin-bottom:7px;
+}
+.guenzel-kaiser-img.contact {
+	background:url(/img/leistungen/stefan-guenzel-tobias-kaiser.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.meyer-img.contact {
+	background:url(/img/leistungen/klaus-martin-meyer.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.wesierski-img.contact {
+	background:url(/img/leistungen/daniel-damian-wesierski.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.abb-img.contact {
+	background:url(/img/leistungen/bernd-abb.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.wilck-img.contact {
+	background:url(/img/leistungen/lars-wilck.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.kaiser-img.contact {
+	background:url(/img/leistungen/tobias-kaiser.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.timmann-kaiser-img.contact {
+	background:url(/img/leistungen/levke-timmann-tobias-kaiser.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.trieloff-img.contact {
+	background:url(/img/leistungen/kevin-trieloff.jpg) top left no-repeat;
+	background-position: top center !important;
+	padding-top: 74%;
+	margin-bottom:-12px;
+}
+.press-img.agency-one {
+	background:url(/img/presse/fsd-eingangsbereich.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.agency-two {
+	background:url(/img/presse/fsd-thinktank.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.agency-three {
+	background:url(/img/presse/fsd-pylone.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.agency-four {
+	background:url(/img/presse/fsd-sofa.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+.press-img.agency-five {
+	background:url(/img/presse/fsd-tuerschild.jpg) top left no-repeat;
+	padding-top: 66%;
+}
+
+.press-img,
+.guenzel-kaiser-img,
+.meyer-img,
+.abb-img,
+.wilck-img,
+.kaiser-img,
+.timmann-kaiser-img,
+.wesierski-img,
+.trieloff-img {
+	border: none !important;
+	display: block;
+	margin: 0;
+	text-indent:-9999px;
+	border:1px solid #cccccc !important;
+}
+
+/** Header **/
+
+header a {
+	background: url('../img/logo.jpg') no-repeat center center scroll #fff;
+	display:block;
+	height:81px;
+	width:170px;
+	text-indent:-9999px;
+	margin: 14px auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	header a {
+		background: url(../img/logo-mobile.png);
+		background-size: 170px 81px;
+	}
+}
+
+/** Navigation  **/
+
+
+nav .navigation-bar {
+	padding: 0 0 0.5em 0;
+	border-bottom:1px solid #999999;
+	margin:20px 0 32px;
+	overflow:hidden;
+}
+
+.arbeiten nav .navigation-bar,
+.leistungen nav .navigation-bar,
+.teams nav .navigation-bar,
+.agentur nav .navigation-bar,
+.presse nav .navigation-bar,
+.jobs nav .navigation-bar {
+	margin:20px 0 55px;
+}
+
+nav a:hover,
+nav a.active,
+a:focus {
+	color:#A5141E;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li ul {
+	display:none;
+	position:absolute;
+	left:15px;
+	top:54px;
+	margin:0;
+}
+
+nav ul li.active ul {
+	display:block;
+}
+
+nav ul li ul li a {
+	font-size:88% !important;
+	padding:0 18px 0 2px;
+}
+
+nav a {
+	text-transform: uppercase;
+	display:block;
+	font-size:127%;
+	font-family:"UniversLTW01-67BoldCn";
+	width:auto;
+	padding: 0 25px 0 2px;
+	text-align:left;
+	border: none;
+}
+
+nav .navigation-bar-sub {
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+
+nav .navigation-bar-sub a {
+	float:left;
+	font-size:127%;
+	padding:0 0 0 25px;;
+}
+
+/** Sub Navigation Mobile **/
+
+nav .navigation-bar-sub-mobile {
+	margin:0px !important;
+}
+
+nav .navigation-bar-sub-mobile li{
+	display:none;
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #cccccc;
+	margin-bottom:15px;
+	padding-bottom:5px;
+	position: relative;
+}
+
+.leistungen .mobile-leistungen.navigation-bar-sub-mobile li.active,
+.teams .mobile-teams.navigation-bar-sub-mobile li.active,
+.agentur .mobile-agentur.navigation-bar-sub-mobile li.active,
+.arbeiten .mobile-kunden.navigation-bar-sub-mobile li.active,
+.presse .mobile-presse.navigation-bar-sub-mobile li.active,
+.jobs .mobile-jobs.navigation-bar-sub-mobile li.active  {
+	display:block;
+}
+
+nav .navigation-bar-sub-mobile li a {
+	background:url("../img/navigation-bar-sub-mobile-bg.png") no-repeat scroll -21px 0 transparent;
+	position:absolute;
+	top:50%;
+	display:block;
+	padding:0px;
+	margin-top: -18px;
+	width:21px;
+	overflow:hidden;
+	height:32px;
+	text-indent:-9999px;
+}
+
+nav .navigation-bar-sub-mobile li a:last-child {
+	right:0px;
+	background-position:0 0;
+}
+
+nav .navigation-bar-sub-mobile li h2 {
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top: 16px !important;
+	font-size: 190% !important;
+}
+
+.arbeiten nav .navigation-bar-sub-mobile li h2 {
+	height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+	padding-top:60px;
+	margin: 0 !important;
+}
+
+.arbeiten.berge-meer nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-berge-meer.png") no-repeat scroll center 18px transparent;
+}
+.arbeiten.blume2000 nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-blume2000.png") no-repeat scroll center -2px transparent;
+}
+.arbeiten.lensbest nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-lensbest.png") no-repeat scroll center 0 transparent;
+}
+.arbeiten.liebherr nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-liebherr.png") no-repeat scroll center 20px transparent;
+}
+.arbeiten.dpv nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-dpv.png") no-repeat scroll center -1px transparent;
+}
+.arbeiten.die-besten-3 nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-die-besten-3.png") no-repeat scroll center -1px transparent;
+}
+.arbeiten.ltur nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-ltur.png") no-repeat scroll center 0 transparent;
+}
+.arbeiten.max-bahr nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-max-bahr.png") no-repeat scroll center 23px transparent;
+}
+.arbeiten.mediamarkt nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-media-markt.png") no-repeat scroll center 18px transparent;
+}
+.arbeiten.monoplan nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-monoplan.png") no-repeat scroll center 20px transparent;
+}
+.arbeiten.loewen-hotel-montafon nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-loewen-hotel-montafon.png") no-repeat scroll center 2px transparent;
+}
+.arbeiten.eloma nav .navigation-bar-sub-mobile li h2 {
+	background:url("../img/banner/mobile-eloma.png") no-repeat scroll center 8px transparent;
+}
+
+/**Dropdown Mobile**/
+
+#megadrop, #megadrop-foot {
+	display:none;
+}
+
+.toggle-nav.button {
+	font-family: "UniversLTW01-57Condense 723821";
+	text-transform: uppercase;
+	font-size:16px;
+	width:40%;
+	margin: 0 0 -35px 10px;;
+	z-index:20;
+	border:none;
+	background: url(../img/bg-toggle-nav.png) no-repeat 92% 11px #000;
+	text-align:left;
+	padding:10px 10px 11px;
+	display:none;
+}
+
+.leistungen .toggle-nav.button {
+	width:43%;
+	padding:10px 7px 11px;#megadrop ul li:nth-child(n+7):nth-child(-n+7), #megadrop-foot-navi ul li:nth-child(n+6):nth-child(-n+6)
+}
+
+.presse .toggle-nav.button {
+	width:43%;
+	padding:10px 7px 11px;
+}
+
+.index .toggle-nav.button.start,
+.agentur .toggle-nav.button.agentur,
+.arbeiten .toggle-nav.button.arbeiten,
+.leistungen .toggle-nav.button.leistungen,
+.kontakt .toggle-nav.button.kontakt,
+.jobs .toggle-nav.button.jobs,
+.impressum .toggle-nav.button.impressum,
+.teams .toggle-nav.button.teams,
+.presse .toggle-nav.button.presse,
+.mehrforsale .toggle-nav.button.mehr-for-sale {
+	display:block;
+}
+
+.toggle-nav.button:focus {
+	box-shadow:none;
+}
+
+#megadrop ul, #megadrop-foot-navi ul {
+	background-color:#444444;
+	border-bottom:2px solid #000;
+	margin:0 0 -1px 0;
+	overflow:hidden;
+}
+
+#megadrop ul li, #megadrop-foot-navi ul li {
+	border-bottom: 1px solid #7C7C7C;
+	width:50%;
+	float:left;
+	margin-bottom:-1px;
+	padding:15px;
+}
+
+#megadrop ul li:nth-child(n+7):nth-child(-n+7), #megadrop-foot-navi ul li:nth-child(n+7):nth-child(-n+7),
+#megadrop ul li:nth-child(n+8):nth-child(-n+8), #megadrop-foot-navi ul li:nth-child(n+8):nth-child(-n+8) {
+	display:none;
+
+}
+
+#megadrop ul li a, #megadrop-foot-navi ul li a {
+	color:#fff;
+	font-family: "UniversLTW01-57Condense 723821";
+	font-size: 130%;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+#megadrop ul li a.active, #megadrop-foot-navi ul li a.active {
+	padding: 0 0 0 25px;
+	background:url("../img/arrow-mobile-bar.png") no-repeat scroll 0 3px transparent;
+}
+
+#megadrop ul li a:hover, #megadrop-foot-navi ul li a:hover {
+	opacity:0.8;
+}
+
+#megadrop-foot-navi ul {
+	margin: 20px 0 0;
+	border-bottom:none;
+	background-color:#E5E5E5;
+}
+
+#megadrop-foot-navi ul li {
+	border-bottom: 1px solid #CECECE;
+}
+
+#megadrop-foot-navi ul li a {
+	color:#444444;
+	font-weight:bold;
+}
+
+#megadrop-foot-navi ul li a.active {
+	background:url("../img/arrow-mobile-bar-foot.png") no-repeat scroll 0 3px transparent;
+}
+
+
+/**Content **/
+
+#main-content {
+	margin-bottom:60px;
+}
+
+#main-content a {
+	border-bottom:1px solid #A5141E;
+}
+
+#main-content h3 {
+	margin:0 0 5px 0;
+	font-size:16px;
+}
+
+#main-content .seven.columns p,
+#main-content .twelve.columns p {
+	margin-bottom:5px;
+}
+
+.large p {
+	font-size:16px;
+}
+
+/** Content Lists **/
+
+.listing * {
+	font-size:14px;
+}
+.agentur.travel .listing *,
+.leistungen .listing * {
+	font-size:15px;
+}
+
+.listing ul li {
+	background:url("../img/arrow-small.gif") no-repeat scroll 0 8px #FFFFFF;
+	padding: 0 0 0 25px;
+}
+
+.listing ul li.facebook {
+	background:none;
+}
+
+/*** Content Agentur ***/
+
+.agentur .maps,
+.kontakt .maps,
+.mehrforsale .maps {
+	margin:8px 0 33px 0;
+}
+
+.e-commerce #main-content .four.columns.listing h3,
+.m-commerce #main-content .four.columns.listing h3,
+.multichannel #main-content .four.columns.listing h3 {
+	margin-top: 21px;
+}
+
+/*** Content Arbeiten ***/
+
+.arbeiten #main-content h3 {
+	margin: 21px 0 7px;
+}
+
+.arbeiten h3.entrance {
+	margin:20px 0 2px 0 !important;
+}
+
+.arbeiten .customers {
+	padding-top:20px;
+}
+
+.arbeiten .customers .columns {
+	padding:0 8px 0 15px;
+}
+
+.arbeiten .customers.entry a {
+	display:block;
+	background:url("../img/arbeiten/arbeiten-kunden.gif") no-repeat scroll center 0 #fff;
+	height:156px;
+	border: 1px solid #cccccc !important;
+	margin: 0 0 20px 0;
+}
+
+.arbeiten .customers a.berge-meer {
+	background-position: center 0px;
+}
+.arbeiten .customers a.berge-meer:hover {
+	background-position: center -154px;
+}
+.arbeiten .customers a.blume-2000 {
+	background-position: center -308px;
+}
+.arbeiten .customers a.blume-2000:hover {
+	background-position: center -462px;
+}
+.arbeiten .customers a.lensbest {
+	background-position: center -616px;
+}
+.arbeiten .customers a.lensbest:hover {
+	background-position: center -770px;
+}
+.arbeiten .customers a.liebherr {
+	background-position: center -924px;
+}
+.arbeiten .customers a.liebherr:hover {
+	background-position: center -1078px;
+}
+.arbeiten .customers a.ltur {
+	background-position: center -1232px;
+}
+.arbeiten .customers a.ltur:hover {
+	background-position: center -1386px;
+}
+.arbeiten .customers a.maxbahr {
+	background-position: center -1540px;
+}
+.arbeiten .customers a.maxbahr:hover {
+	background-position: center -1694px;
+}
+.arbeiten .customers a.mediamarkt {
+	background-position: center -1848px;
+}
+.arbeiten .customers a.mediamarkt:hover {
+	background-position: center -2002px;
+}
+.arbeiten .customers a.monoplan {
+	background-position: center -2156px;
+}
+.arbeiten .customers a.monoplan:hover {
+	background-position: center -2310px;
+}
+.arbeiten .customers a.dpv {
+	background-position: center -2464px;
+}
+.arbeiten .customers a.dpv:hover {
+	background-position: center -2618px;
+}
+.arbeiten .customers a.die-besten-3 {
+	background-position: center -2772px;
+}
+.arbeiten .customers a.die-besten-3:hover {
+	background-position: center -2926px;
+}
+.arbeiten .customers a.loewen-hotel-montafon {
+	background-position: center -3080px;
+}
+.arbeiten .customers a.loewen-hotel-montafon:hover {
+	background-position: center -3234px;
+}
+.arbeiten .customers a.eloma {
+	background-position: center -3388px;
+}
+.arbeiten .customers a.eloma:hover {
+	background-position: center -3542px;
+}
+
+/*** Content Arbeiten Verteiler Rotation ***/
+
+.arbeiten .rotate {
+	margin:-275px 0 0 15px;
+}
+
+.arbeiten .rotate h1,
+.arbeiten .rotate h2 {
+	padding:0 0 7px;
+}
+.arbeiten.dpv .shops {
+   overflow: hidden;
+}
+.arbeiten.dpv .shops li {
+   float: left;
+   margin: 20px 20px 0 0;
+}
+ .arbeiten.dpv .shops li a {
+   width: 118px;
+   height: 0px;
+   padding-top: 77px;
+   display: block;
+   overflow: hidden;
+   background:url(/img/arbeiten/dpv-shops.gif) top left no-repeat;
+   border: 1px solid #CCCCCC !important;
+ }
+ .arbeiten.dpv .shops li a.eltern-shop {
+	background-position: 0px -77px;
+ }
+ .arbeiten.dpv .shops li a.ng-shop {
+	background-position: 0px -154px;
+ }
+ .arbeiten.dpv .shops li a.gam-shop {
+	background-position: 0px -238px;
+ }
+ .arbeiten.dpv .shops li a.ga-shop {
+	background-position: 0px -313px;
+ }
+
+
+
+
+@media only screen and (max-width:768px) {
+	.arbeiten.dpv #main-content {
+		margin-top:12px;
+	}
+}
+
+/*** Content Leistungen ***/
+
+.footnote {
+	font-size:10px;
+	margin-top:-20px;
+}
+
+/*** Content Leistungen -Travel ***/
+
+.agentur.travel .banner-block {
+	position: relative;
+}
+
+@media only screen and (min-width:768px) {
+	.agentur.travel .banner-block {
+		overflow: hidden;
+	}
+}
+
+.lt-ie9 .agentur.travel .banner-block {
+	overflow: hidden;
+}
+
+.agentur.travel .banner-block .footnote {
+	font-size:11px;
+	line-height: 17px;
+}
+
+.agentur.travel .banner-block .hide-for-small.footnote {
+	position: absolute;
+	top: 215px;
+	left: 690px;
+	width: 260px;
+}
+
+.agentur.travel #main-content h3,
+.leistungen #main-content h3,
+.teams #main-content h3 {
+	margin-top: 23px !important;
+}
+
+.agentur.travel #main-content .list-rr {
+	margin: -16px 0 0 0;
+	padding-bottom: 30px;
+}
+
+.agentur.travel #main-content .list-rr li {
+	float: left;
+	margin: 16px 16px 0 0;
+	background: url("../img/agentur/ltur-berge-meer-traveltainment-logos.png") top left no-repeat;
+}
+
+.agentur.travel #main-content .list-rr li a,
+.agentur.travel #main-content .list-rr .rr-traveltainment span {
+	display: block;
+	text-align: center;
+	padding: 49px 0 0 0;
+	border: none;
+	font-size:15px;
+}
+
+.agentur.travel #main-content .list-rr li a span {
+	border-bottom: 1px solid #A5141E;
+}
+
+.agentur.travel #main-content .list-rr .rr-ltur {
+	background-position: 0px 0px;
+	width: 48px;
+}
+
+.agentur.travel #main-content .list-rr .rr-berge-meer {
+	background-position: -69px 0px;
+	width: 97px;
+}
+
+.agentur.travel #main-content .list-rr .rr-traveltainment {
+	background-position: -185px 0px;
+	width: 115px;
+	margin-right: 0px;
+}
+
+/*** Content Jobs ***/
+
+ul.accordion {
+	border:none;
+}
+
+ul.accordion li .title {
+	border-top: 1px solid #999999;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	background: none;
+	padding: 13px 15px 13px 0;
+}
+
+ul.accordion li ,
+ul.accordion li.active,
+ul.accordion li.active .content,
+ul.accordion li.active .title:after,
+ul.accordion li .title:after  {
+	border:none !important;
+}
+
+ul.accordion li h5 {
+	background: #fff;
+	padding: 4px 0 4px 40px;
+	font-size:20px;
+	position: relative;
+}
+
+ul.accordion li h5 .icon {
+	width: 28px;
+	height: 28px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url("../img/jobs/plus-minus.gif") no-repeat scroll top left;
+}
+
+ul.accordion li.active h5 .icon {
+	background-position: 0 -28px;
+}
+
+ul.accordion li span {
+	font-weight:normal;
+	margin:0 0 10px 0;
+	line-height:1.6;
+}
+
+ul.accordion li h3 {
+	margin:20px 0 5px 0 !important;
+}
+
+ul.accordion li .content {
+	padding: 0 0 15px 40px;
+}
+
+ul.accordion .seven.columns p {
+	line-height:1.5;
+}
+
+ul.accordion .listing {
+	margin-bottom:20px;
+}
+
+ul.accordion .listing ul {
+	margin-left:2px;
+}
+
+.jobs .listing {
+	padding-right:35px;
+}
+
+.jobs.qualitaetsmanagement .nobr {
+	font-size: 100% !important;
+}
+
+.second.jobs {
+	padding-top: 40px;
+}
+
+.panel {
+	background-color:#F7F7F7;
+	margin-top:30px;
+}
+ul.accordion li .panel h3 {
+	background: url(../img/arrow-jobs.png) no-repeat 110px 4px transparent;
+	margin:0 0 5px 0 !important;
+}
+
+.jobs .listing * {
+	font-size:15px;
+}
+
+.jobs .listing ul li {
+	background-position: 0 8px;
+}
+
+.jobs .apply-link {
+	margin-top:20px !important;
+}
+
+#main-content .apply-h2 {
+	margin-top:40px !important;
+}
+
+ul.accordion li .download h3 {
+	margin:0px 0 3px 0 !important;
+}
+
+.jobs .apply {
+	margin-bottom: 30px;
+}
+
+/*** Bewerbung ***/
+
+.bewerbung #main-content .seven.columns p {
+	margin-bottom:20px;
+}
+
+.bewerbung .seven.columns .alert-box p {
+	margin-bottom:5px !important;
+}
+
+.bewerbung #main-content .seven.columns h3 {
+   margin:-15px 0 5px !important;
+}
+
+.bewerbung form .twelve.columns label {
+	float:left;
+	margin:20px 0 5px 0;
+	padding: 0 15px 0 0;
+}
+
+.bewerbung .twelve.columns input,
+.kontakt input#callback,
+.kontakt input#copy {
+	background-color:transparent !important;
+}
+
+/*** Content Teams ***/
+
+.teams .listing * {
+	font-size:15px;
+}
+
+/*** Content Kontakt ***/
+
+.kontakt .adress-mail {
+	margin: -14px 0 32px 0;
+}
+
+/*** Alert Box ***/
+
+div.alert-box {
+	margin:30px 0 0;
+	border:none;
+	border-radius:0px;
+	padding:10px 10px 10px 13px;
+}
+
+div.alert-box p {
+	margin:0;
+}
+
+div.alert-box.success,
+div.alert-box.alert {
+	background-color:#DBFCC7;
+	color:#000;
+	text-shadow:none;
+}
+
+div.alert-box.alert {
+	background-color:#FDE5E5;
+}
+
+div.alert-box.alert span {
+	color:#E70000;
+	font-weight:bold;
+}
+
+div.alert-box a.close {
+	border:none !important;
+}
+
+/*** Content Impressum ***/
+
+.impressum h3 {
+	margin:0 0 7px !important;
+}
+
+.credits p {
+	font-size:13px;
+}
+
+.credits a {
+	font-size:13px !important;
+}
+
+.row.credits .three {
+	width:22%;
+}
+
+.credits .columns {
+	padding-right:0px !important;
+}
+
+.row.credits .two {
+	width:18%;
+}
+
+.social h2 {
+	padding-top:10px;
+}
+#main-content .twelve.columns.social p {
+	margin-bottom:17px;
+}
+
+.google h2 {
+	border-top:1px solid #CCCCCC;
+	padding-top:20px;
+}
+
+/*** Content Presse ***/
+
+.press-img img,
+.guenzel-kaiser-img img,
+.meyer-img img,
+.abb-img img,
+.wilck-img img,
+.kaiser-img img,
+.timmann-kaiser-img img,
+.wesierski-img img,
+.trieloff-img img,
+.press-contact img,
+.presse figure img {
+	border:1px solid #CCCCCC;
+	margin: 4px 0;
+}
+
+.press span,
+.report span,
+.press-date {
+	font-size:12px;
+}
+
+.press .itemscope span,
+.report .itemscope span {
+	font-size: 14px;
+	margin: 0;
+}
+
+.press-contact .auer-logo {
+	width: 130px;
+	height: 0px;
+	padding-top: 52px;
+	display: block;
+	overflow: hidden;
+	background: url(../img/presse/auer-public-relations.jpg) 0 0 no-repeat;
+	margin: 10px 0 12px 0;
+}
+
+.report span {
+	margin-bottom: 10px;
+}
+
+.presse.downloads .report span {
+	margin-bottom: 5px;
+}
+
+.report figcaption span {
+	margin-bottom: 20px !important;
+}
+
+.press p {
+	margin: 5px 0 10px 0 !important;
+}
+
+
+.presse figure {
+	width:55%;
+	float:left;
+	margin:2px 20px 10px 0;
+}
+
+.presse h4 {
+	margin-bottom:30px !important;
+}
+
+.presse.downloads h4 {
+	margin-bottom:7px !important;
+}
+
+.presse h5 {
+	font-size:11px;
+	margin: 4px 0 5px 0;
+}
+
+.presse .report h5 {
+	font-size:14px;
+	margin: 12px 0 10px 0;
+	font-weight:normal;
+}
+
+.presse.downloads h5 {
+	font-size:14px;
+}
+
+.presse figcaption {
+	margin-bottom:6px;
+}
+
+figcaption a {
+	margin: 0 5px 0 0;
+	line-height: 20px;
+}
+
+.press-date {
+	margin: 0 0 4px 0 !important;
+}
+
+.five.columns.press,
+.eight.columns.press {
+	padding-left:0px;
+}
+
+.presse #main-content .report h1,
+.presse .report h4 {
+	font-size: 16px !important;
+	margin-bottom:7px !important;
+	margin-top: 20px !important;
+}
+
+.presse .report .press-overview {
+	margin-bottom:15px;
+	display: inline-block;
+}
+
+.press-icon {
+	display: inline-block;
+	padding-top:67px;
+	margin:3px 0 10px 0;
+}
+
+.press-icon span {
+	font-size:11px;
+}
+
+.press-icon.mess {
+	background: url(../img/icons/press-icon-mess.gif) 0 0 no-repeat;
+}
+
+.press-icon.map {
+	background: url(../img/icons/press-icon-map.gif) 0 0 no-repeat;
+}
+
+.presse .downloads figcaption a {
+	line-height:22px;
+}
+
+.presse .four.columns .facebook {
+	float:right;
+	margin-top:68px;
+}
+
+.presse .four.columns .gplus {
+	float:right;
+}
+
+.presse .four.columns .facebook span {
+	font-size:14px;
+}
+
+/*** Content Mehr For Sale ***/
+
+.mehrforsale hr {
+	margin: 20px 0 20px 0;
+}
+
+.mehrforsale .more-link {
+	display:inline-block;
+	margin:10px 0 5px 0;
+}
+
+.mehrforsale .logo {
+	displaY:block;
+	text-indent:-9999px;
+	border:none !important;
+	width:178px;
+	height:81px;
+}
+
+.mehrforsale .logo.for-sale {
+	background: url(../img/logo-for-sale.png) 0 0 no-repeat;
+	margin:0 auto 15px auto;
+	width:141px;
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.mehrforsale .logo.for-sale {
+		background: url(../img/logo-for-sale-retina.png);
+		background-size: 150px 85px;
+		width:150px !important;
+		height:85px;
+	}
+}
+
+.mehrforsale .logo.for-sale-mobile {
+	background: url(../img/logo-for-sale-mobile.png) 0 0 no-repeat;
+	margin:0 auto 15px auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.mehrforsale .logo.for-sale-mobile {
+		background: url(../img/logo-for-sale-mobile-retina.png);
+		background-size: 187px 85px;
+		width:187px !important;
+		height:85px;
+	}
+}
+
+/**Mobile Drop Foot **/
+.foot .button {
+	border-radius:5px 5px 5px 5px;
+	width:130px;
+	border:none;
+	color:#444444;
+	font-family: "UniversLTW01-67BoldCn";
+	font-weight: normal;
+	margin: 0 0 0 15px;
+	text-align:left;
+	padding:12px 0 10px 35px;
+	background:url("../img/arrow-mobile-foot.png") no-repeat scroll 10% 12px #dddddd;
+	font-size:16px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.foot .button {
+		background:url("../img/arrow-mobile-bar-foot-retina.png") no-repeat scroll 10% 12px #dddddd;
+		background-size: 19px 16px;
+	}
+}
+.foot .button:hover {
+	background-color:#dddddd;
+	opacity:0.8;
+}
+
+/**Footer **/
+footer {
+	background: url(../img/footer.jpg) repeat-x center top #fff;
+	min-height:166px;
+	padding:20px 0;
+}
+
+footer p {
+	text-align:center;
+	margin-bottom:0;
+}
+
+footer a {
+	border-bottom:1px solid #A5141E;
+}
+
+footer .link-list a {
+	font-size:13px !important;
+}
+
+
+a.facebook,
+a.xing,
+a.googleplus {
+	position: relative;
+	border: none !important;
+	padding: 0 0 0 18px;
+	display: inline-block;
+}
+
+a.facebook span,
+a.xing span,
+a.googleplus span {
+	border-bottom: 1px solid #A5141E;
+}
+
+a.facebook span.icon,
+a.xing span.icon,
+a.googleplus span.icon {
+	width: 14px;
+	height: 14px;
+	border: none;
+	background: url(../img/icons/fc-webicon-facebook-xs.png) left top no-repeat;
+	position: absolute;
+	top: 3px;
+	left: 0px;
+}
+
+a.xing span.icon {
+	background-image: url(../img/icons/fc-webicon-xing-xs.png);
+}
+
+a.googleplus span.icon {
+	background-image: url(../img/icons/fc-webicon-googleplus-xs.png);
+}
+
+footer .link-list {
+	padding-top:10px;
+}
+
+footer .link-list a {
+	margin:0 10px;
+}
+
+/** Galerie Orbit **/
+
+.gt-768 div.orbit-wrapper {
+	cursor: pointer;
+}
+
+.gt-768 .nonav div.orbit-wrapper .slider-nav {
+	display: none;
+}
+
+div.orbit-wrapper div.slider-nav span {
+	height:40px;
+	margin-top:-20px;
+	width:40px;
+}
+
+div.orbit-wrapper div.slider-nav span.left {
+	background-image:url(../img/galerie-icon-prev.png) !important;
+	background-position:left top;
+	left:-15px;
+}
+
+div.orbit-wrapper div.slider-nav span.right {
+	background-image:url(../img/galerie-icon-next.png) !important;
+	background-position:right top;
+	right:-15px;
+}
+
+/** Layer Reveal **/
+
+.reveal-modal {
+	width: 750px;
+	margin-left: -375px;
+	padding: 20px;
+	background: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+	.reveal-modal, .reveal-modal.small, .reveal-modal.medium, .reveal-modal.large, .reveal-modal.xlarge {
+		width: 80%;
+		margin-left: -40%;
+		padding: 20px;
+	}
+}
+
+/* Google Maps */
+
+#map_canvas,
+#map_canvas2 {
+	 width: 100%;
+	 height: 250px;
+	 margin: 14px 0 0;
+}
+
+#map_canvas a,
+#map_canvas2 a {
+	border: none;
+}
+
+#map_canvas2 img {
+	max-width: none !important;
+}
+
+/*** FC Webicons by Fairhead Creative http://fairheadcreative.com ***/
+
+.fc-webicon { border:none !important;display: inline-block; background-size: 100%; width: 30px; height: 30px; text-indent: -999em; text-align: left; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-bottom: 7px; margin-top:5px; margin-right:3px; }
+.fc-webicon:hover { -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); margin-right:3px;}
+.fc-webicon.small { width: 20px; height: 20px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.fc-webicon.large { width: 48px; height: 48px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+
+/* Facebook */
+.no-svg .fc-webicon.facebook { background: url("../img/icons/fc-webicon-facebook-m.png"); }
+.no-svg .fc-webicon.facebook.large { background: url("../img/icons/fc-webicon-facebook.png"); }
+.no-svg .fc-webicon.facebook.small { background: url("../img/icons/fc-webicon-facebook-s.png"); }
+.svg .fc-webicon.facebook { background: url("../img/icons/fc-webicon-facebook.svg"); }
+
+/* Google+ */
+.no-svg .fc-webicon.googleplus { background: url("../img/icons/fc-webicon-googleplus-m.png"); }
+.no-svg .fc-webicon.googleplus.large { background: url("../img/icons/fc-webicon-googleplus.png"); }
+.no-svg .fc-webicon.googleplus.small { background: url("../img/icons/fc-webicon-googleplus-s.png"); }
+.svg .fc-webicon.googleplus { background: url("../img/icons/fc-webicon-googleplus.svg"); }
+
+/* Twitter */
+.no-svg .fc-webicon.twitter { background: url("../img/icons/fc-webicon-twitter-m.png"); }
+.no-svg .fc-webicon.twitter.large { background: url("../img/icons/fc-webicon-twitter.png"); }
+.no-svg .fc-webicon.twitter.small { background: url("../img/icons/fc-webicon-twitter-s.png"); }
+.svg .fc-webicon.twitter { background: url("../img/icons/fc-webicon-twitter.svg"); }
+
+/* Xing */
+.no-svg .fc-webicon.xing { background: url("../img/icons/fc-webicon-xing-m.png"); }
+.no-svg .fc-webicon.xing.large { background: url("../img/icons/fc-webicon-xing.png"); }
+.no-svg .fc-webicon.xing.small { background: url("../img/icons/fc-webicon-xing-s.png"); }
+.svg .fc-webicon.xing { background: url("../img/icons/fc-webicon-xing.svg"); }
+
+
+/* Mail */
+.no-svg .fc-webicon.mail { background: url("../img/icons/fc-webicon-mail-m.png"); }
+.no-svg .fc-webicon.mail.large { background: url("../img/icons/fc-webicon-mail.png"); }
+.no-svg .fc-webicon.mail.small { background: url("../img/icons/fc-webicon-mail-s.png"); }
+.svg .fc-webicon.mail { background: url("../img/icons/fc-webicon-mail.svg"); }
+
+h2.social {
+	margin-top: 30px;
+}
+
+#contact-form p.hint,
+#job-form p.hint {
+	display: inline;
+}
+
+textarea.error {
+	border-color: #C60F13;
+	background-color: rgba(198, 15, 19, 0.1);
+}
+
+#job-form label[for="title-Herr"],
+#job-form label[for="title-Frau"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#job-form label[for="title-Frau"] input {
+	margin-left: 0px;
+}
+
+.press-file-upload {
+	position:relative;
+}
+
+.browseButton{
+	padding: 6px !important;
+	position:relative;
+	left:42%;
+	top:-28px;
+	background-image:none !important;
+	font-size:14px !important;
+}
+.browseText{
+	width:40% !important;
+	margin: 0;
+	padding: 2px 0;
+
+}
+input.theFileInput{
+	position:absolute;
+	top:0px;
+	left: 220px;
+	opacity:0;
+	-moz-opacity:0;
+	filter:alpha(opacity:0);
+	z-index:2;
+	width:28%;
+	margin:0;
+	height:32px;
+	padding:0;
+}
+
+label[for=callback-1] {
+	margin-top: 25px;
+}
+
+form label span {
+	color: #818181;
+}
+
+.arbeiten [class*="column"] + [class*="column"]:last-child {
+	float:left !important;
+}
+
+#socialshareprivacy {
+	position:relative;
+	left:60px;
+	top:45px;
+}
+
+.jobs #socialshareprivacy {
+	top:5px;
+}
+
+/*** Leistungen ***/
+.leistungen .listing ul  {
+	margin-top: 21px;
+}
+.leistungen .listing ul li  {
+	margin-bottom: 9px;
+}
+.leistungen .listing ul li a  {
+	font-family: "UniversLTW01-67BoldCn";
+}
+.leistungen .customer-list li  {
+	margin-bottom: 7px;
+}
+
+.leistungen #main-content .footnote  {
+	font-size: 12px;
+	margin: 30px 0 0 0;
+}
+
+/*** Teams ***/
+.teams .listing ul  {
+	margin-top: 21px;
+}
+.teams .listing ul li  {
+	margin-bottom: 9px;
+}
+.teams .listing ul li a  {
+	font-family: "UniversLTW01-67BoldCn";
+}
+.teams .listing h2  {
+	margin-top: 40px;
+}
+.teams.strategie-beratung .listing .strategie-beratung a,
+.teams.konzeption-text .listing .konzeption-text a,
+.teams.gestaltung .listing .gestaltung a,
+.teams.entwicklung-produktion .listing .entwicklung-produktion a,
+.teams.projektmanagement .listing .projektmanagement a,
+.teams.qualitaetsmanagement .listing .qualitaetsmanagement a {
+	border: none !important;
+}
+@media only screen and (max-width:768px) {
+	.teams .listing .team-list {
+		margin-top: 37px;
+	}
+}
+
+/* Make the Facebook Like box responsive - https://gist.github.com/smeranda/2571173 */
+#fb-root {
+	display: none;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+	width: 100% !important;
+}
+
+.fb_iframe_widget {
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	padding-right: 1px;
+}
+
+/* Media Markt Störer auf Startseite */
+.index .banner-block {
+	position: relative;
+	background-position: center top;
+}
+.index .banner-block .hide-for-small.stoerer {
+	position: absolute;
+	top: -10px;
+	right: 42px;
+	width: 95px;
+	height: 0px;
+	padding-top: 210px;
+	display: block;
+	overflow: hidden;
+	background:url(/img/stoerer-media-markt.png) top left no-repeat;
+}
+.index .banner-block .show-for-small.stoerer {
+	border: none;
+	padding: 0 !important;
+}
+.index .banner-block .show-for-small.stoerer a {
+	border-bottom: 1px solid #A5141E;
+}
+
+/* Blog auf Startseite */
+.blog h2 {
+	padding-top: 18px;
+	border-top: 1px solid #999999;
+}
+.blog ul.accordion {
+	margin: 0;
+}
+.blog ul.accordion li .content {
+	padding: 0 0 25px 40px;
+}
+.blog ul.accordion li .content p {
+	margin-bottom: 10px !important;
+}
+.blog ul.accordion li .content p:last-child {
+	margin-bottom: 0px !important;
+}
+.blog ul.accordion li .content .decimal-list {
+	margin-bottom: 10px;
+}
+.blog ul.accordion li .content .decimal-list li {
+	list-style: decimal;
+	margin-left: 20px;
+}
+.blog ul.accordion li .content img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+@media only screen and (max-width: 768px) {
+	.blog ul.accordion li .content img {
+		float: none;
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+}
+.blog ul.accordion li:last-child .content {
+	padding-bottom: 0px;
+}
+.blog ul.accordion li .title {
+	padding: 25px 0 0 40px;
+}
+.blog ul.accordion li .title h3 {
+	font-size: 24px !important;
+	margin: 0 !important;
+}
+.blog ul.accordion li .title p {
+	margin-bottom: 25px !important;
+}
+.blog ul.accordion li.active .title p {
+	display: none;
+}
+.blog ul.accordion li .title .date {
+	font-size: 12px;
+	color: #444444;
+}
+.blog ul.accordion li .title .icon {
+	width: 26px;
+	height: 26px;
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	background:url(../img/accordion-icon.png) bottom left no-repeat;
+}
+.blog ul.accordion li.active .title .icon {
+	background-position: top left;
+}
+.blog ul.accordion li .title p > span {
+	border-bottom: 1px solid #A5141E;
+}
+.blog ul.accordion li .title p > span:hover {
+	color: #A5141E;
+}
